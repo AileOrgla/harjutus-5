@@ -28,6 +28,39 @@ harjutus-5
           $result3 = 20;
           echo "Kas result3 on boolean? ".is_bool($result3);
         ?>
+        <h2>Andmetüüpide olekud</h2>
+        <h3>NULL</h3>
+          <?php
+            $var1 = null;
+            $var2 = "";
+            $var3 = 0;
+            echo "Kas var1 on null? ".is_null($var1);
+            echo "<br>";
+            echo "Kas var2 on null? ".is_null($var2);
+            echo "<br>";
+            echo "Kas var3 on null? ".is_null($var3);
+            echo "<br>";
+            echo "Kas var4 on null? ".is_null($var4);
+          ?>
+        <h3>Set</h3>
+          <?php
+            echo "Kas var1 on väärtustatud? ".isset($var1); 
+            echo "<br>";
+            echo "Kas var2 on väärtustatud? ".isset($var2);
+            echo "<br>";
+            echo "Kas var3 on väärtustatud? ".isset($var3);
+            echo "<br>";
+            echo "Kas var4 on väärtustatud? ".isset($var4);
+            echo "<br>";
+            echo "Kas var1 on empty? ".empty($var1); 
+            echo "<br>";
+            echo "Kas var2 on empty? ".empty($var2);
+            echo "<br>";
+            echo "Kas var3 on empty? ".empty($var3);
+            echo "<br>";
+            echo "Kas var4 on empty? ".empty($var4);
+
+          ?>
 
    </body>
 
