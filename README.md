@@ -90,6 +90,14 @@ harjutus-5
           echo "<br>";
           echo gettype($count);
         ?>
+        <h2>Konstandid</h2>
+        <?php
+          define("MAX_WIDTH", 980);
+          echo MAX_WIDTH;
+          define("MAX_WIDTH", 500);
+          echo MAX_WIDTH;
+          //MAX_WIDTH = MAX_WIDTH + 20;/
+        ?>
         
 
    </body>
