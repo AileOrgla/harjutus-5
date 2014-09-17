@@ -61,6 +61,36 @@ harjutus-5
             echo "Kas var4 on empty? ".empty($var4);
 
           ?>
+          <h2>Andmetüübi teisendamine</h2>
+        <?php
+          $count = 2;
+          echo $count;
+          echo "<br>";
+          echo gettype($count);
+          echo "<br>";
+          settype($count, "string");
+          echo $count;
+          echo "<br>";
+          echo gettype($count);
+          settype($count, "double");
+          echo "<br>";
+          echo $count;
+          echo "<br>";
+          echo gettype($count);
+          settype($count, "array");
+        ?>
+      <pre>
+        <?php
+          echo print_r($count);
+        ?>
+      </pre>
+        <?php
+          settype($count, "boolean");
+          echo $count;
+          echo "<br>";
+          echo gettype($count);
+        ?>
+        
 
    </body>
 
